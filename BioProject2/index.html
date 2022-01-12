@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patrick's Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src = "vars.js"></script>
+    <script defer src = "script.js"></script>
+</head>
+<body>
+    <div id="canvas-container" class="canvas-container">
+        <canvas id="main-canvas" class="main-canvas">
+
+        </canvas>
+    </div>
+    <div id="log" class="log">
+
+    </div>
+    <button type="button" class="button" onclick="details = !details">Show Details</button>
+    <br>
+    <button type="button" class="button" onclick="diff -= 50">IncrDiffuse</button>
+    <text>Diffusion Coefficient (Divisor): </text><text id="diff">diff</text>
+    <button type="button" class="button" onclick="diff += 50">DecrDiffuse</button>
+    <br>
+    <button type="button" class="button" onclick="diffBoundary -= 50">IncrBDiffuse</button>
+    <text>diffBoundary: </text><text id="diffBoundary">diff</text>
+    <button type="button" class="button" onclick="diffBoundary += 50">DecrBDiffuse</button>
+    <br>
+    <button type="button" class="button" onclick="respCo *= 1.2">incr respCo</button>
+    <text>respCo: </text><text id="respCo">respCo</text>
+    <button type="button" class="button" onclick="respCo /= 1.2">decr respCo</button>
+
+    <br>
+    <button type="button" class="button" onclick="atmdiff = !atmdiff">atmdiff</button>
+    <text>atmdiff: </text><text id="atmdiff">atmdiff</text>
+
+    <br>
+    <button type="button" class="button" onclick="grounddiff = !grounddiff">grounddiff</button>
+    <text>grounddiff: </text><text id="grounddiff">grounddiff</text>
+
+    <br>
+    <button type="button" class="button" onclick="
+    for (let i = 0; i < 250; i++) {
+        gameElements.push(new Plankton(map));
+        gameElements.push(new Decomposer(map));
+    }
+    ">SPAWN NEW CREATURES</button>
+
+    <br>
+    <button type="button" class="button" onclick="map.sky.carbon += 50">incr aCO2</button>
+    <text>aCO2: </text><text id="aCO2">aCO2</text>
+    <button type="button" class="button" onclick="map.sky.carbon -= 50">decr aCO2</button>
+    <br>
+    <button type="button" class="button" onclick="map.sky.oxygen += 50">incr aO2</button>
+    <text>aO2: </text><text id="aO2">aO2</text>
+    <button type="button" class="button" onclick="map.sky.oxygen -= 50">decr aO2</button>
+    <br>
+    <button type="button" class="button" onclick="map.ground.carbon += 50">incr gCO2</button>
+    <text>gCO2: </text><text id="gCO2">aCO2</text>
+    <button type="button" class="button" onclick="map.ground.carbon -= 50">decr gCO2</button>
+    <br>
+    <button type="button" class="button" onclick="map.ground.oxygen += 50">incr gO2</button>
+    <text>gO2: </text><text id="gO2">gO2</text>
+    <button type="button" class="button" onclick="map.ground.oxygen -= 50">decr gO2</button>
+
+</body>
+</html>

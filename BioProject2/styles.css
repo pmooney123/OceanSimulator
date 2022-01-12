@@ -1,0 +1,29 @@
+body {
+    background-color: grey;
+}
+.canvas-container {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    height: 510px;
+    width: 810px;
+    background-color: black;
+    border: solid black 2px;
+}
+.log {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 350px;
+    background-color: grey;
+    color: black;
+    font-family: SansSerif, serif;
+    font-size: 10px;
+}
+.main-canvas {
+    width: 800px;
+    height: 500px;
+    background-color: green;
+    border: solid black 2px;
+}
